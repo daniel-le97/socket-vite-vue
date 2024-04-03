@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import * as os from 'socket:os'
-import HelloWorld from './components/HelloWorld.vue'
-
+import HelloWorld from './components/HelloWorld.vue';
 
 </script>
 

@@ -5,19 +5,17 @@
   "private": true,
   "scripts": {
     "watch:vite": "vite",
-    "builder:vite": "vue-tsc && vite build",
-    "builder:socket": "ssc build --prod -r",
-    "build": "run-s builder:*",
+    "build:vite": "vue-tsc && vite build",
+    "build:socket": "ssc build --prod -r",
+    "build": "run-s build:*",
     "preview": "vite preview",
     "watch:socket": "ssc build -r --host=localhost --port=5173",
     "dev": "run-p watch:*",
-    "lint": "eslint . --fix",
-    "setup:sqlite": "./scripts/init-sqlite3-build.sh"
+    "lint": "eslint . --fix"
   },
   "dependencies": {
     "@socketsupply/socket": "^0.5.4",
     "@vueuse/core": "^10.9.0",
-    "unimport": "^3.7.1",
     "vue": "^3.4.21"
   },
   "devDependencies": {
@@ -29,9 +27,7 @@
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2",
-    "unplugin-auto-import": "^0.17.5",
     "vite": "^5.2.0",
-    "vite-plugin-external": "^4.3.0",
     "vite-plugin-externalize-dependencies": "^0.12.0",
     "vue-tsc": "^2.0.6"
   }
